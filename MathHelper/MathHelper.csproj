@@ -4,10 +4,13 @@
         <TargetFramework>net8.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
+        <RootNamespace>NoiseGenerator</RootNamespace>
     </PropertyGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\Noise.API\Noise.API.csproj" />
+      <Reference Include="Plugin.API">
+        <HintPath>..\..\CubeRealmServer\Plugin.API\bin\Debug\net8.0\Plugin.API.dll</HintPath>
+      </Reference>
     </ItemGroup>
 
 </Project>
